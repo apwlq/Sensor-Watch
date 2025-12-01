@@ -81,4 +81,8 @@ Hardware Schematics and PCBs
 
 License
 -------
-프로젝트의 각 구성 요소는 서로 다른 라이선스를 따릅니다. 자세한 내용은 [LICENSE.md](https://github.com/joeycastillo/Sensor-Watch/blob/main/LICENSE.md)를 참고하세요.
+프로젝트의 각 구성 요소는 서로 다른 라이선스를 따릅니다. 자세한 내용은 [LICENSE.md](LICENSE.md)를 참고하세요.
+
+---
+
+본 문서는 인공지능 번역기를 통해 자동 번역된 내용으로, 번역의 정확성이나 법적 효력은 보장되지 않으므로 참고용으로만 사용하시기 바랍니다.
