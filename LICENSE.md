@@ -1,91 +1,55 @@
-Sensor Watch Licenses
+Sensor Watch 라이선스
 =====================
 
-Several different components of the project are licensed differently. In summary:
+이 프로젝트는 여러 구성 요소가 서로 다른 라이선스를 따릅니다. 요약하면 다음과 같습니다:
 
-* The PCB design files are provided under a copyleft-style Creative Commons Attribution-ShareAlike 4.0 license. Commercial use is explicitly permitted, but you must credit the author and share derivative designs under a Creative Commons Attribution-ShareAlike 4.0 (or compatible) license.
-* For the most part, the sensor watch library code uses the permissive MIT license. Commercial use is explicitly permitted, and there is no requirement to share derivative works.
-* The debug UART setup is BSD licensed code from Alex Taradov's excellent [Bare-Metal MCU Starter Projects](https://github.com/ataradov/mcu-starter-projects) repository. I would like to refactor the debug UART to communicate over USB, however; once this UART code is removed, the whole watch library should be MIT-licensed.
-* The Microchip / Atmel Studio Framework support code is provided by Microchip for use with Microchip products. I have no idea how compatible this is with anything else, but this code is only required to interface with the SAM L22, which is a Microchip product.
+* PCB 설계 파일은 카피레프트 성향의 Creative Commons Attribution-ShareAlike 4.0 라이선스로 제공됩니다. 상업적 사용은 명시적으로 허용되지만, 저자를 명시해야 하며 파생 설계물 역시 Creative Commons Attribution-ShareAlike 4.0(또는 호환) 라이선스로 공유해야 합니다.
+* 대부분의 Sensor Watch 라이브러리 코드는 관대한(permissive) MIT 라이선스를 사용합니다. 상업적 사용이 명시적으로 허용되며, 파생 저작물을 공개해야 할 의무는 없습니다.
+* 디버그 UART 설정은 Alex Taradov의 훌륭한 [Bare-Metal MCU Starter Projects](https://github.com/ataradov/mcu-starter-projects) 저장소에서 가져온 BSD 라이선스 코드입니다. 향후 이 디버그 UART를 USB를 통해 통신하도록 리팩터링할 예정이며, 이 UART 코드가 제거되면 전체 워치 라이브러리는 MIT 라이선스로 통일될 예정입니다.
+* Microchip / Atmel Studio Framework 지원 코드는 Microchip 제품과 함께 사용하도록 Microchip에서 제공한 것입니다. 다른 환경과의 호환성은 알 수 없지만, 이 코드는 Microchip 제품인 SAM L22와의 인터페이스에만 필요합니다.
 
-Sensor Watch PCB Designs
-------------------------
+Sensor Watch PCB 설계
+---------------------
 
-This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+이 작업물은 Creative Commons Attribution 4.0 International License에 따라 라이선스됩니다.  
+이 라이선스의 사본을 보려면 http://creativecommons.org/licenses/by/4.0/ 를 방문하거나, Creative Commons, PO Box 1866, Mountain View, CA 94042, USA로 서면 요청을 보내세요.
 
-Sensor Watch Library
---------------------
+Sensor Watch 라이브러리
+-----------------------
 
-MIT License
+MIT 라이선스
 
 Copyright (c) 2021 Joey Castillo
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+본 소프트웨어 및 관련 문서 파일(이하 “소프트웨어”)의 사본을 취득한 모든 사람에게, 다음 조건을 충족하는 한, 사용, 복사, 수정, 병합, 게시, 배포, 서브라이선스, 판매를 포함하여 소프트웨어를 제한 없이 다룰 수 있는 권한을 무상으로 허가합니다.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+위 저작권 고지와 본 허가 고지는 소프트웨어의 모든 사본 또는 상당 부분에 포함되어야 합니다.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+본 소프트웨어는 “있는 그대로(AS IS)” 제공되며, 상품성, 특정 목적에 대한 적합성, 비침해에 대한 보증을 포함하되 이에 한정되지 않는 어떠한 종류의 보증도 명시적이거나 묵시적으로 제공되지 않습니다. 어떠한 경우에도 저작권자 또는 권리자는 본 소프트웨어의 사용 또는 기타 거래와 관련하여 발생하는 계약, 불법행위 또는 기타 사유로 인한 어떠한 청구, 손해 또는 기타 책임에 대해서도 책임을 지지 않습니다.
 
-UART Methods
-------------
+UART 메서드
+-----------
 
 Copyright (c) 2014-2016, Alex Taradov <alex@taradov.com>
 All rights reserved.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+다음 조건을 충족하는 경우, 수정 여부와 관계없이 소스 코드 및 바이너리 형태로의 재배포 및 사용이 허용됩니다:
 
-1. Redistributions of source code must retain the above copyright notice,
-   this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
-3. The name of the author may not be used to endorse or promote products
-   derived from this software without specific prior written permission.
+1. 소스 코드 형태로 재배포할 경우, 위 저작권 고지, 본 조건 목록 및 다음 면책 조항을 유지해야 합니다.
+2. 바이너리 형태로 재배포할 경우, 배포와 함께 제공되는 문서나 기타 자료에 위 저작권 고지, 본 조건 목록 및 다음 면책 조항을 포함해야 합니다.
+3. 저자의 이름은 사전 서면 허가 없이 이 소프트웨어에서 파생된 제품을 홍보하거나 보증하는 데 사용할 수 없습니다.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
+본 소프트웨어는 저작권자 및 기여자에 의해 “있는 그대로(AS IS)” 제공되며, 상품성 및 특정 목적에 대한 적합성에 대한 묵시적 보증을 포함하되 이에 한정되지 않는 어떠한 명시적 또는 묵시적 보증도 부인됩니다. 어떠한 경우에도 저작권자 또는 기여자는 이 소프트웨어의 사용으로 인해 발생하는 직접적, 간접적, 부수적, 특별, 예시적 또는 결과적 손해(대체 재화 또는 서비스의 조달, 사용 손실, 데이터 손실, 이익 손실, 사업 중단 등을 포함하되 이에 한정되지 않음)에 대해 책임을 지지 않습니다. 이는 계약, 엄격 책임 또는 불법행위(과실 포함) 등 어떠한 책임 이론에 근거하더라도 동일하며, 그러한 손해 가능성이 사전에 통지되었더라도 마찬가지입니다.
 
-Atmel Studio Framework Code
+Atmel Studio Framework 코드
 ---------------------------
 
-Copyright (c) 2014-2018 Microchip Technology Inc. and its subsidiaries.
+Copyright (c) 2014-2018 Microchip Technology Inc. 및 그 자회사.
 
-Subject to your compliance with these terms, you may use Microchip
-software and any derivatives exclusively with Microchip products.
-It is your responsibility to comply with third party license terms applicable
-to your use of third party software (including open source software) that
-may accompany Microchip software.
+본 약관을 준수하는 한, 귀하는 Microchip 소프트웨어 및 그 파생물을 Microchip 제품과 함께 사용하는 경우에 한해 사용할 수 있습니다. Microchip 소프트웨어와 함께 제공될 수 있는 제3자 소프트웨어(오픈 소스 소프트웨어 포함)의 라이선스 조건을 준수할 책임은 사용자에게 있습니다.
 
-THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES,
-WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE,
-INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY,
-AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL MICROCHIP BE
-LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL
-LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE
-SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF THE
-POSSIBILITY OR THE DAMAGES ARE FORESEEABLE.  TO THE FULLEST EXTENT
-ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY
-RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
-THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+본 소프트웨어는 Microchip에 의해 “있는 그대로(AS IS)” 제공됩니다. 비침해, 상품성 및 특정 목적에 대한 적합성에 대한 묵시적 보증을 포함하여, 어떠한 형태의 명시적, 묵시적 또는 법정 보증도 적용되지 않습니다. Microchip은 이 소프트웨어와 관련하여 발생하는 어떠한 간접적, 특별, 징벌적, 부수적 또는 결과적 손실, 손해, 비용 또는 지출에 대해서도 책임을 지지 않습니다. 이러한 손해의 가능성이 사전에 통지되었거나 예견 가능했더라도 마찬가지입니다. 법이 허용하는 최대 범위 내에서, 이 소프트웨어와 관련된 모든 청구에 대한 Microchip의 총 책임은, 해당 소프트웨어에 대해 사용자가 Microchip에 직접 지불한 금액(있는 경우)을 초과하지 않습니다.
+
+---
+
+본 문서는 인공지능 번역기를 통해 자동 번역된 내용으로, 번역의 정확성이나 법적 효력은 보장되지 않으므로 참고용으로만 사용하시기 바랍니다.
